@@ -11,15 +11,15 @@
        const tercerNota = Number (prompt("Escribe tu tercer nota"))
        const promedio = ((primerNota*(.2))+(segundaNota*(.3))+(tercerNota*(.5)))
 
-       if (primerNota<=5, segundaNota<=5, tercerNota<=5) {
-            if (promedio>3.0) {
+       if (primerNota<=5 && segundaNota<=5 && tercerNota<=5) {
+            if (promedio>=3.0) {
                 alert("Tu promedio es: " + promedio + ". Haz aprovado tu materia.")
             } else {
-                alert("Tu promedio es: " + promedio + "Haz reprobado tu materia")
+                alert("Tu promedio es: " + promedio + ". Haz reprobado tu materia")
             }
 
        } else {
-            alert("Tus calificaciones no son validas. Debes ingresar una calificacion en 0 y 5.")
+            alert("Tus calificaciones no son validas. Debes ingresar una calificacion entre 0 y 5.")
        }
     </script>
 </head>
