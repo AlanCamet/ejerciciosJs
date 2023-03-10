@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema Cuatro</title>
+    <script>
+       const primerNota = Number(prompt("Escribe tu primer nota:"))
+       const segundaNota = Number(prompt("Escribe tu segunda nota:"))
+       const tercerNota = Number (prompt("Escribe tu tercer nota"))
+       const promedio = ((primerNota*(.2))+(segundaNota*(.3))+(tercerNota*(.5)))
+
+       if (primerNota<=5, segundaNota<=5, tercerNota<=5) {
+            if (promedio>3.0) {
+                alert("Tu promedio es: " + promedio + ". Haz aprovado tu materia.")
+            } else {
+                alert("Tu promedio es: " + promedio + "Haz reprobado tu materia")
+            }
+
+       } else {
+            alert("Tus calificaciones no son validas. Debes ingresar una calificacion en 0 y 5.")
+       }
+    </script>
+</head>
+<body>
+    <p>Diseñar un programa que permita determinar si un estudiante aprobó o no una asignatura con tres notas, teniendo en cuenta que la primera nota tiene un valor del 20%, la segunda del 30%, la tercera del 50% y la nota mínima aprobatoria es de 3.0. Verificar que en cada caso la nota ingresada sea válida, es decir que se encuentre en el intervalo [0,5].</p>
+</body>
+</html>
