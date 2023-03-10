@@ -9,23 +9,23 @@
     <script>
         const numUno = Number(prompt("Ingresa el primer numero:"))
         const numDos = Number(prompt("Ingresa el segundo numero"))
-        const operacionType = pompt("Indica con los signos que operación deseas: SUMA (+)  RESTA (-)  MULTIPLICACIÓN (*)  DIVISIÓN (/)")
+        const operacionType = prompt("Indica con los signos que operación deseas: SUMA (+)  RESTA (-)  MULTIPLICACIÓN (*)  DIVISIÓN (/)")
         var operacion
 
-        if (operacionType = "+") {
+        if (operacionType == "+") {
             operacion = numUno + numDos
             alert("El resultado de tu suma es: " + operacion)
-        } else if(operacionType = "-"){
+        } else if(operacionType == "-"){
             operacion = numUno - numDos
             alert("El resultado de tu resta es: " + operacion)
-        } else if(operacionType = "*"){
+        } else if(operacionType == "*"){
             operacion = numUno * numDos
             alert("El resultado de tu multiplicación es: " + operacion)
-        } else if (operacionType = "/") {
+        } else if (operacionType == "/") {
             operacion = numUno / numDos
             alert("El resultado de tu división es: " + operacion)
         } else {
-            alert("Operación no valida")
+            alert("Operación no válida")
         }
 
 
