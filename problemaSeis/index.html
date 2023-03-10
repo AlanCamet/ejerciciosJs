@@ -10,16 +10,16 @@
         const hojasLibro =  Number(prompt("Ingresa el numero de hojas del libro:"))
         const copiasLibro = Number(prompt("Ingresa cuantas copias del libro quieres:"))
         const copias = (hojasLibro*copiasLibro)
-        const costoTotal = (copias*costo)
+        var costoTotal
 
         if (copias<=50) {
-                var costo = 100
-        } else if(50<copias<=100){
-            var costo = 80
-        } else if(100<copias<=200){
-            var costo = 65
-        } else (200<copias){
-            var costo = 50
+                costoTotal = copias*100
+        } else if(50<copias && copias<=100){
+                costoTotal = copias*80
+        } else if(100<copias && copias<=200){
+                costoTotal = copias*65
+        } else {
+            costoTotal = copias*50
         }
 
         alert("el numero de copias es " + copias + " y el costo total sera de " + costoTotal)
