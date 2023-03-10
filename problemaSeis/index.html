@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema Seis</title>
+
+    <script>
+        const hojasLibro =  Number(prompt("Ingresa el numero de hojas del libro:"))
+        const copiasLibro = Number(prompt("Ingresa cuantas copias del libro quieres:"))
+        const copias = (hojasLibro*copiasLibro)
+        const costoTotal = (copias*costo)
+
+        if (copias<=50) {
+                var costo = 100
+        } else if(50<copias<=100){
+            var costo = 80
+        } else if(100<copias<=200){
+            var costo = 65
+        } else (200<copias){
+            var costo = 50
+        }
+
+        alert("el numero de copias es " + copias + " y el costo total sera de " + costoTotal)
+    </script>
+</head>
+<body>
+    <p>Una fotocopiadora cobra 100 pesos por cada fotocopia si el número de copias es menor a 50, 80 pesos si se solicitan entre 50 y 100 copias, 65 pesos si el número de copias es mayor a 100 y menor a 200 y 50 pesos si el número de copias es superior a 200. Esta promoción aplica independientemente de sí las copias son o no del mismo original. Desarrollar un algoritmo que permita determinar el valor que debe pagar una persona que manda a fotocopiar un libro para sus compañeros. El usuario deberá ingresar el número de hojas del libro y el número total de copias del libro que se desea realizar.</p>
+</body>
+</html>
