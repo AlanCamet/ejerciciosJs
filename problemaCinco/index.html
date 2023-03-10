@@ -13,7 +13,16 @@
         const quintaMateria = Number(prompt("Ingresa la calificacion de tu quinta materia:"))
         const colegiatura = Number(prompt("¿Cual es el costo de tu colegiatura?"))
         const promedio = ((primerMateria+segundaMateria+tercerMateria+cuartaMateria+quintaMateria)/5)
+        const descuento = (colegiatura * .75)
 
+        if (primerMateria<= 5 && segundaMateria<=5 && tercerMateria<=5 && cuartaMateria<=5 && quintaMateria<=5){
+            if (promedio < 4.0) {
+            alert("Tu promedio es de  " + promedio + " y no se te puede otorgar la beca con un promedio menor a 4.0")
+        } else {
+            alert("Tu promedio es de  " + promedio + " y se te otrgará una beca del 25%, siendo tu nueva colegiatura de " + descuento)
+        }} else{
+            alert("Tus calificaciones no son validas. Debes ingresar una calificacion entre 0 y 5.")
+        }
         
 
     </script>
