@@ -9,6 +9,12 @@
         const altura = Number(prompt("Escribe tu estatura en Metros: "))
         const peso = Number(prompt("Escribe tu peso en Kilogramos: "))
         const imc = peso / (altura * altura)
+        
+        if (imc<24.9) {
+            alert ("Tu IMC es: " + imc + " e indica que no hay sobrepeso")
+        } else {
+            alert ("Tu IMC es: " + imc + " e indica que hay sobrepeso")
+        }   
     </script>
 </head>
 <body>
