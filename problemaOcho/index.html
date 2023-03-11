@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema Ocho</title>
+
+    <script>
+        const metroCotizar = Number(prompt("¿Cuantos metros cuadrados se trabajaran de pintura?"))
+        const transporte = 15000
+        const cotizacionEstucado = (metroCotizar * 2000) + transporte
+        const cotizacionEstucando = (metroCotizar * 5000) + transporte
+        const cotizacionSinEstucar = (metroCotizar * 2800) + transporte
+
+        alert("Tu cotización por " + metroCotizar + " metros. es en superficie lisa: " + cotizacionEstucado + ", haciendo trabajo de pintura y estuco en: " + cotizacionEstucando + ", y pintura sin estuco en: " + cotizacionSinEstucar)
+
+    </script>
+</head>
+<body>
+    <p>Por un trabajo de pintura a domicilio, un contratista cobra quince mil pesos por el transporte más
+dos mil pesos por cada metro cuadrado a pintar si la superficie está lisa (estucada). Si la superficie
+no está lisa, el cliente puede pagar tres mil pesos adicionales por cada metro cuadrado o decidir
+pintarla sin estucar, caso en el cual el metro de pintura tiene un recargo de ochocientos pesos.
+Desarrollar un algoritmo que permita obtener la cotización sobre un trabajo, teniendo en cuenta
+que si la pared no está lista se le deberá indicar al usuario el costo de cada una de las opciones
+para que él decida cuál de ellas seleccionar.</p>
+</body>
+</html>
