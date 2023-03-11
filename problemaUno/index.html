@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema Uno</title>
+
+    <script>
+        const tiempo = Number (prompt("¿Cuanto tiempo (en segundos), tomó al vehiculo recorrer 1 kilometro?"))
+        const velocidadSegundos = 1/tiempo
+        const velocidadHora = velocidadSegundos * 3600
+
+        if (velocidadHora>= 100){
+            alert("El vehiculo alcanzó una velocidad de " + velocidadHora + " km/h, y rebazó la velocidad crucero establecida en 100 km/h")
+        }
+
+    </script>
+</head>
+<body>
+    <p>En una prueba de velocidad un vehículo reporta el tiempo usado para recorrer una distancia de 1
+        km. Diseñar un algoritmo que genere una alarma, si el vehículo superó la velocidad de crucero en
+        ese recorrido, la cual está definida en 100 Km/h.</p>
+</body>
+</html>5
