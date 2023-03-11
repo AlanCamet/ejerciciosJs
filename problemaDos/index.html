@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema Dos</title>
+
+    <script>
+        const creditosPrimerHijo = Number(prompt("¿Cuantos créditos tomará el primer alumno?"))
+        const creditosSegundoHijo = Number(prompt("¿Cuantos créditos tomará el segundo alumno?"))
+        const creditosTercerHijo = Number(prompt("¿Cuantos créditos tomará el primer alumno?"))
+        var montoEfectivo
+        var montoIcetex
+        var montoBanco
+        const totalMatriculas = 1800000 * (creditosPrimerHijo + creditosSegundoHijo + creditosTercerHijo)
+        
+        if (totalMatriculas>7000000) {
+            montoEfectivo = totalMatriculas * .4
+            montoIcetex = totalMatriculas * .3
+            montoBanco = totalMatriculas * .3
+
+            alert("El total de las matriculas es " + totalMatriculas + ", y podrá pagar " + montoEfectivo + ", pedir prestado al Icetex " + montoIcetex + ", y pedir prestado al banco " + montoBanco)
+        } else {
+            montoEfectivo = totalMatriculas * .7
+            montoIcetex = totalMatriculas * .3
+            alert("El total de las matriculas es " + totalMatriculas + ", y podrá pagar " + montoEfectivo + ", y pedir prestado al Icetex " + montoIcetex)
+        }
+
+    </script>
+</head>
+<body>
+    <p>Una familia con tres hijos estudiando en la Universidad, decide cómo pagar el valor de las
+        matrículas de sus hijos de la siguiente manera: si el costo total de las tres matrículas excede los
+        7 millones de pesos, la familia podrá pagar un 40% del costo, pedirá prestado al Icetex 30% y al
+        banco un 30%. Si el total de la compra no excede los 7 millones de pesos, la familia estará en
+        capacidad de invertir de su propio dinero un 70% y el restante 30% lo pagará solicitando crédito
+        al Icetex. Sabiendo que el valor de un crédito académico es de 180.0000
+        pesos, diseñar un programa que determine la forma de pago de las matrículas, dado el número
+        de créditos académicos que tomará cada hijo en el semestre. </p>
+</body>
+</html>
